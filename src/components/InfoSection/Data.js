@@ -17,12 +17,12 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id:'Discover',
+    id:'discover',
     lightBg:true,
     lightText:false,
     lightTextDesc:false,
     topLine: 'Unlimited Access',
-    headline: 'unlimited Transactions with zero fees',
+    headline: 'unlimitedsss Transactions with zero fees',
     description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
     buttonLabel:'Learn More',
     imgStart: true,
@@ -41,7 +41,7 @@ export const homeObjThree = {
     lightTextDesc:false,
     topLine: 'Premium Bank',
     headline: 'unlimited Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
+    description: 'Get access to our exclusivess app that allows you to send unlimited transactions without getting charged any fees.',
     buttonLabel:'Start Now',
     imgStart: false,
     img: require('../../images/svg-3.svg').default,

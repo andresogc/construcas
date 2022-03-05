@@ -1,4 +1,4 @@
-export const homeObjOne = {
+/* export const homeObjOne = {
     id:'about',
     lightBg:false,
     lightText:true,
@@ -15,16 +15,22 @@ export const homeObjOne = {
     darkText:false,
 
 };
-
+ */
 export const homeObjTwo = {
     id:'discover',
     lightBg:true,
     lightText:false,
     lightTextDesc:false,
-    topLine: 'Unlimited Access',
-    headline: 'unlimitedsss Transactions with zero fees',
-    description: 'Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel:'Learn More',
+    topLine: 'Servicios',
+    headline: 'Servicios',
+    description: 'Ejecución de obras y reformas necesarias en el espacio que nos entregue. Ofrecemos mejoras locativas y de elementos completas. ',
+    li:true,
+    li2:'Remodelación de casas',
+    li3:'Remodelación de apartamentos',
+    li4:'Remodelación de oficinas',
+    li5:'Remodelación de locales comerciales',
+    li6:'Reformas locativas',
+    buttonLabel:'Ir al inicio',
     imgStart: true,
     img: require('../../images/svg-2.svg').default,
     alt:'Piggybank',
@@ -42,8 +48,9 @@ export const homeObjThree = {
     topLine: 'Premium Bank',
     headline: 'unlimited Transactions with zero fees',
     description: 'Get access to our exclusivess app that allows you to send unlimited transactions without getting charged any fees.',
-    buttonLabel:'Start Now',
+    buttonLabel:'Ir al inicio',
     imgStart: false,
+    li:false,
     img: require('../../images/svg-3.svg').default,
     alt:'Paper',
     dark:false,

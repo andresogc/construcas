@@ -1,31 +1,39 @@
 import React from 'react';
-import Icon1 from '../../images/svg-1.svg';
+/* import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel'; */
+/* import Icon1 from '../../images/svg-1.svg';
 import Icon2 from '../../images/svg-3.svg';
-import Icon3 from '../../images/svg-5.svg';
+import Icon3 from '../../images/svg-5.svg'; */
+
+import Icon1 from '../../images/trabajos/image1.jpeg';
+import Icon2 from '../../images/trabajos/image2.jpeg';
+import Icon3 from '../../images/trabajos/image3.jpeg';
+
 
 import { ServicesContainer,ServicesH1,ServicesWrapper,ServicesCard,ServicesIcon,ServicesH2,ServicesP } from "./servicesElements";
 
 const Services = () => {
   return (
     <ServicesContainer id="services">
-        <ServicesH1>Our services</ServicesH1>
+        <ServicesH1> services</ServicesH1>
         <ServicesWrapper>
             <ServicesCard>
                 <ServicesIcon src={Icon1}/>
-                <ServicesH2>Reduce expenses</ServicesH2>
-                <ServicesP>He help reduce your fess and increase you overall revenue</ServicesP>
+                <ServicesH2>Remodelación de casas</ServicesH2>
+                <ServicesP>Mejora de ambiente con diseños vivos y vanguardistas.</ServicesP>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon2}/>
-                <ServicesH2>Virtual offices</ServicesH2>
-                <ServicesP>You can access oir platform onli anywhere in the world</ServicesP>
+                <ServicesH2>Reformas locativas</ServicesH2>
+                <ServicesP>Acabados y texturizados modernos.</ServicesP>
             </ServicesCard>
             <ServicesCard>
                 <ServicesIcon src={Icon3}/>
-                <ServicesH2>Premium benefits</ServicesH2>
-                <ServicesP>Unlock our special mebership card that returns 5% cash back</ServicesP>
+                <ServicesH2>Remodelaciones</ServicesH2>
+                <ServicesP>Hacemos todo tipo de remodelaciones en apartamentos, oficinas, edificios..</ServicesP>
             </ServicesCard>
         </ServicesWrapper>
+       
     </ServicesContainer>
   )
 }

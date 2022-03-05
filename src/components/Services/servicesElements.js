@@ -58,8 +58,8 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 300px;
+    width: 300px;
     margin-bottom: 10px;
 `
 
@@ -81,4 +81,18 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+`
+
+//carousel
+export const CarouselItem = styled.div`
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    max-height: 340px;
+    max-width: 400px;
+   
+    
 `

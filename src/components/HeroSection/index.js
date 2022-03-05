@@ -17,9 +17,9 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
         </HeroBg>
         <HeroContent>
-          <HeroH1>Adecuaciones para tu hogar</HeroH1>
+          <HeroH1>Remodelaciones de apartementos, viviendas, oficinas, edificios.</HeroH1>
           <HeroP>
-            Contactanos sin compromiso
+            Contactame sin compromiso
           </HeroP>
           <HeroBtnWrapper>
             <Button 
@@ -34,7 +34,7 @@ const HeroSection = () => {
               exact='true'
               offset={-80}
             >
-              Get started {hover ? <ArrowForward/> : <ArrowRight/>}
+              Enviar conuslta por email {hover ? <ArrowForward/> : <ArrowRight/>}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

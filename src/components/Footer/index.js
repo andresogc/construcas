@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaInstagram,FaYoutube, FaLinkedin,FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram,FaYoutube, FaLinkedin,FaTwitter,FaWhatsapp } from 'react-icons/fa';
 import { FooterContainer,FooterWrap,FooterLinksContainer,FooterLinksWrapper,FooterLinkItems,FooterLinkTitle,FooterLink,SocialMedia, SocialMediaWrap,SocialLogo,WebsiteRights,SocialIcons,SocialIconLink} from "./footerElements";
 import { animateScroll as scroll } from 'react-scroll';
 
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <FooterContainer>
         <FooterWrap>
-            <FooterLinksContainer>
+          {/*   <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>About us</FooterLinkTitle>
@@ -49,13 +49,13 @@ const Footer = () => {
                             <FooterLink to="/signin">Terms of service</FooterLink>
                     </FooterLinkItems>
                 </FooterLinksWrapper>
-            </FooterLinksContainer>
+            </FooterLinksContainer> */}
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/' onClick={toggleHome}>
-                        Dolla
+                        Construcas
                     </SocialLogo>   
-                    <WebsiteRights>Dolla ® {new Date().getFullYear()} All rights reserved.</WebsiteRights> 
+                    <WebsiteRights>Construcas ® {new Date().getFullYear()} All rights reserved.</WebsiteRights> 
                     <SocialIcons>
                         <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                             <FaFacebook/>
@@ -66,11 +66,14 @@ const Footer = () => {
                         <SocialIconLink href="/" target="_blank" aria-label="Youtube">
                             <FaYoutube/>
                         </SocialIconLink>
-                        <SocialIconLink href="//www.twitter.com/" target="_blank" aria-label="Twitter">
+                        <SocialIconLink href="https://twitter.com/home?lang=es" target="_blank" aria-label="Twitter">
                             <FaTwitter/>
                         </SocialIconLink>
                         <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                             <FaLinkedin/>
+                        </SocialIconLink>
+                        <SocialIconLink href="/" target="_blank" aria-label="Whatsapp">
+                            <FaWhatsapp/>
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>

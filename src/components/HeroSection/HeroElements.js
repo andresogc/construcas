@@ -103,3 +103,8 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     font-size:20px;
 `;
 
+export const SocialIconLink = styled.a`
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+`;

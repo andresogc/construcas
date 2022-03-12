@@ -1,6 +1,9 @@
 import React, {useState} from 'react';
 import Video from '../../videos/video.mp4';
-import { HeroContainer,HeroBg, VideoBg,HeroContent,HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight} from './HeroElements';
+import { FaWhatsapp } from 'react-icons/fa';
+import { HeroContainer,HeroBg, VideoBg,HeroContent,HeroH1,HeroP,HeroBtnWrapper,ArrowForward,ArrowRight,SocialIconLink} from './HeroElements';
+
+
 import {Button} from '../ButtonElements';
 
 const HeroSection = () => {
@@ -17,10 +20,10 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
         </HeroBg>
         <HeroContent>
-          <HeroH1>Remodelaciones de apartementos, viviendas, oficinas, edificios.</HeroH1>
-          <HeroP>
-            Contactame sin compromiso
-          </HeroP>
+          <HeroH1>
+            Remodelaciones de apartementos, viviendas, oficinas, edificios.
+          </HeroH1>
+         
           <HeroBtnWrapper>
             <Button 
               to='signup' 
@@ -34,7 +37,7 @@ const HeroSection = () => {
               exact='true'
               offset={-80}
             >
-              Enviar conuslta por email {hover ? <ArrowForward/> : <ArrowRight/>}
+             Contacto  {hover ? <ArrowForward/> : <ArrowRight/>}
             </Button>
           </HeroBtnWrapper>
         </HeroContent>

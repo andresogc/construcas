@@ -112,8 +112,23 @@ export const NavBtnLink = styled(LinkR)`
     color: #010606;  
   }
 
-`
+`;
+export const SocialIconLink = styled.a`
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    padding: 0 1rem;
+    height:100%;
+    cursor:pointer;
 
+    &.active{
+      border-bottom: 3px solid #01bf71;
+    }
+`;
 
 
 

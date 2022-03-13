@@ -2,7 +2,7 @@ import React,{useState,useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { IconContext } from "react-icons/lib";
 import { FaWhatsapp } from 'react-icons/fa';
-import { Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,SocialIconLink,/* NavBtnLink */ } from "./navbarElements";
+import { Nav,NavbarContainer,NavLogo,MobileIcon,NavMenu,NavItem,NavLinks,NavBtn,SocialIconLink/* NavBtnLink */ } from "./navbarElements";
 import { animateScroll as scroll } from 'react-scroll';
 
 const Navbar = ({toggle}) => {
@@ -47,15 +47,9 @@ const Navbar = ({toggle}) => {
             <NavItem>
               <NavLinks to="signup" smooth={true} duration={500} spy={true} exact={true} offset={-80}>Contacto</NavLinks>
             </NavItem>
-
-           
             <NavItem>
-             
-              <SocialIconLink href="https://twitter.com/home?lang=es" target="_blank" aria-label="Whatsapp"><FaWhatsapp/>  +57 301 245 84 44 </SocialIconLink>
-             
+              <SocialIconLink href="https://wa.me/573175758227" target="_blank" aria-label="Whatsapp"><FaWhatsapp/>  +57 301 245 84 44 </SocialIconLink>
             </NavItem>
-
-
           </NavMenu>
           <NavBtn>
            {/*  <NavBtnLink to="/signin">Sign In</NavBtnLink> */}

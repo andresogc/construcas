@@ -48,7 +48,7 @@ export const ServicesCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-    
+    width: 350px;
     &:hover{
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
@@ -58,9 +58,9 @@ export const ServicesCard = styled.div`
 `
 
 export const ServicesIcon = styled.img`
-    height: 300px;
-    width: 300px;
-    margin-bottom: 10px;
+    height: 200px;
+    width: 320px;
+    margin-bottom: 0px;
 `
 
 export const ServicesH1 = styled.h1`
@@ -75,12 +75,13 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2`
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 `
 
 export const ServicesP = styled.p`
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 10px;
 `
 
 //carousel
@@ -96,3 +97,4 @@ export const CarouselItem = styled.div`
    
     
 `
+

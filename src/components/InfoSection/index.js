@@ -1,18 +1,25 @@
-import React from 'react';
+import React,{useState} from 'react';
 import emailjs from '@emailjs/browser';
 import { Button } from '../ButtonElements';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap , ImgWrap, Img,FormWrap,/* Icon, */FormContent,Form, FormH1, FormLabel, FormInput ,FormTextArea,FormButton/* ,Text */ } from './infoElements';
+import Modal from '../Modal';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, SubTitle, BtnWrap , ImgWrap, Img,FormWrap,/* Icon, */FormContent,Form, FormH1, FormLabel, FormInput ,FormTextArea,FormButton/* ,Text */ ,Content,ContentModal} from './infoElements';
 
 const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,description,buttonLabel,img,alt, primary,dark,dark2,li,li2,li3,li4,li5,li6,contact,setImg}) => {
     
+
+    const [modalState, setModalState] = useState(false);
+
     const sendEmail = (e)=>{
         e.preventDefault();
 
         emailjs.sendForm('service_4eo9jzk', 'template_0lplc6l', e.target, 'MbfNmJ2RjJqLZqhPG')
           .then((result) => {
-              console.log(result.text);
+              if(result.text === 'OK'){
+                setModalState(true);
+              }
           }, (error) => {
               console.log(error.text);
+              
           });
           e.target.reset();
     }
@@ -38,7 +45,7 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,de
                                                 <FormLabel htmlFor='for'>Nombre</FormLabel>
                                                 <FormInput type='text' name="name" required/>
                                                 <FormLabel htmlFor='for'>Teléfono</FormLabel>
-                                                <FormInput type='number' name="phone" max="9999999999"/>
+                                                <FormInput type='number' name="phone" max="999999999999"/>
                                                 <FormLabel htmlFor='for'>Email</FormLabel>
                                                 <FormInput type='email' name="email" required/>
                                                 <FormLabel htmlFor='for'>Mensaje</FormLabel>
@@ -47,6 +54,7 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,de
                                                {/*  <Text>Forgot password</Text> */}
                                             </Form>
                                         </FormContent>
+                                        
                                     </FormWrap>
                                 }
 
@@ -61,6 +69,8 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,de
                                 :""}
                               
                             </TextWrapper>
+
+                          
                         </Column1>
                        
                         <Column2>
@@ -70,11 +80,28 @@ const InfoSection = ({lightBg,id,imgStart,topLine,lightText,headline,darkText,de
                             <BtnWrap>
                                     <Button to="Home" smooth={true} duration={500} spy={true} exact="true" offset={-80} primary={primary ? 1:0} dark={dark ? 1:0} dark2={dark2 ? 1:0} >{buttonLabel}</Button>
                                 </BtnWrap>
+                               
                         </Column2>
-                        
+                       
                     </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
+            <ContentModal>
+                <Modal
+                    modalState={modalState}
+                    changeState={setModalState}
+                    title={'Información'}
+                >
+                    <Content>
+                    <h1>Mensaje enviado!</h1>
+                    <p>Gracias por tu mensaje. Muy pronto nos comunicaremos contigo.</p>
+                    
+                    <Button
+                        onClick={()=> setModalState(false)}
+                    >Aceptar</Button>
+                    </Content>
+                </Modal>
+            </ContentModal>
         </>
     )
 }

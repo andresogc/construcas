@@ -48,7 +48,7 @@ const Navbar = ({toggle}) => {
               <NavLinks to="signup" smooth={true} duration={500} spy={true} exact={true} offset={-80}>Contacto</NavLinks>
             </NavItem>
             <NavItem>
-              <SocialIconLink href="https://wa.me/573175758227" target="_blank" aria-label="Whatsapp"><FaWhatsapp/>  +57 301 245 84 44 </SocialIconLink>
+              <SocialIconLink href="https://wa.me/573175758227" target="_blank" aria-label="Whatsapp"><FaWhatsapp/>  +57 317 575 82 27 </SocialIconLink>
             </NavItem>
           </NavMenu>
           <NavBtn>

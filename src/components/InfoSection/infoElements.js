@@ -139,7 +139,7 @@ export const Form = styled.form`
   max-width: 400px;
   height: auto;
   width: 100%;
-  z-index: 1;
+  //z-index: 1;
   display: grid;
   margin: 0 auto;
   padding: 80px 32px;
@@ -195,4 +195,35 @@ export const Text = styled.span`
   margin-top: 24px;
   color: #fff;
   font-size: 14px;
+`;
+
+//content del modal
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+  }
+
+`;
+
+export const ContentModal = styled.div`
+  width: 100%;
 `;

@@ -63,7 +63,7 @@ const Services = () => {
         <ServicesH1> Proyectos</ServicesH1>
         <ServicesWrapper>
             <ServicesCard>
-                <Carousel autoPlay={true} infiniteLoop={true} showIndicators={false}>
+                <Carousel autoPlay={true} infiniteLoop={true} showIndicators={false} >
                     <ServicesIcon src={Icon1}/>
                     <ServicesIcon src={Icon15}/>
                     <ServicesIcon src={Icon22}/>

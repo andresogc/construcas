@@ -16,7 +16,7 @@ const Sidebar = ({isOpen,toggle}) => {
                 <SidebarLink to="services" onClick={toggle}>Proyectos</SidebarLink>
                 <SidebarLink to="signup" onClick={toggle}>Contacto</SidebarLink>
                {/*  <SidebarLink to="https://wa.me/573175758227" onClick={toggle}><FaWhatsapp/>  +57 301 245 84 44</SidebarLink> */}
-                <SocialIconLink href="https://wa.me/573175758227" target="_blank" aria-label="Whatsapp"><FaWhatsapp/>  +57 301 245 84 44 </SocialIconLink>
+                <SocialIconLink href="https://wa.me/573175758227" target="_blank" aria-label="Whatsapp"><FaWhatsapp/>  +57 317 575 82 27 </SocialIconLink>
             </SidebarMenu>
            {/*  <SideBtnWrap>
                 <SidebarRoute to="/signin">Sign In</SidebarRoute>
